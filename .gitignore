@@ -1,0 +1,31 @@
+# Output files
+output/
+*.md
+!README.md
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.so
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Poetry
+dist/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

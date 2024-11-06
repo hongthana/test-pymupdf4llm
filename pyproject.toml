@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "test-pymupdf4llm"
+version = "0.1.0"
+description = ""
+authors = ["hongthana <thanawat.rn@gmail.com>"]
+readme = "README.md"
+packages = [{include = "test_pymupdf4llm", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pymupdf4llm = "^0.0.17"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
