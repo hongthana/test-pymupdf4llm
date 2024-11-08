@@ -1,95 +1,47 @@
 # PDF to Markdown Converter
 
-A Python tool that converts PDF documents to markdown format using the pymupdf4llm library.
+This application allows you to convert PDF documents to markdown format using the `pymupdf4llm` library. It features a Gradio interface for easy file uploads and conversion, displaying both the markdown content and the time taken for the conversion.
+
+## Features
+
+- Convert PDF files to markdown format.
+- Upload PDF files through a Gradio web interface.
+- Automatically saves the output markdown file using the original filename with a `.md` extension in the `output` folder.
+- Displays the markdown content and the conversion time directly on the Gradio interface.
 
 ## Installation
 
-This project uses Poetry for dependency management. To install:
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd test-pymupdf4llm
+   ```
 
-```bash
-# Clone the repository
-git clone https://github.com/hongthana/test-pymupdf4llm.git
-cd test-pymupdf4llm
+2. Install the dependencies:
+   ```bash
+   poetry install
+   ```
 
-# Install dependencies using Poetry
-poetry install
-```
-
-## Requirements
-
-- Python 3.9 or higher
-- Poetry
-- pymupdf4llm 0.0.17 or higher
-
-## Project Structure
-
-```
-project_root/
-├── src/
-│   └── test_pymupdf4llm/
-│       ├── __init__.py
-│       └── main.py
-├── tests/
-│   ├── __init__.py
-│   └── data/           # Store test PDF files here
-│       └── test.pdf    # Test PDF files
-├── output/             # Generated markdown files
-│   └── result.md
-├── .gitignore
-├── LICENSE
-├── README.md
-└── pyproject.toml
-```
-
-The project follows a standard Python package structure:
-- `src/test_pymupdf4llm/`: Source code directory
-- `tests/`: Test files and test data
-- `output/`: Generated markdown output files
-- Configuration files in root directory
+3. Ensure you have the required Python version:
+   - Python 3.10 or higher
 
 ## Usage
 
-### Activate Poetry Environment
+1. Run the application:
+   ```bash
+   poetry run python src/test_pymupdf4llm/main.py
+   ```
 
-Before running the script, activate the Poetry environment:
+2. Open the Gradio interface in your web browser.
 
-```bash
-poetry shell
-```
+3. Upload a PDF file to convert it to markdown format.
 
-### Running the Script
+4. The markdown content and conversion time will be displayed on the interface, and a file will be saved in the `output` directory.
 
-There are two ways to run the PDF converter:
+## License
 
-1. Print output to console:
-```bash
-python src/test_pymupdf4llm/main.py tests/data/test.pdf
-```
+This project is licensed under the MIT License.
 
-2. Save output to a file:
-```bash
-python src/test_pymupdf4llm/main.py tests/data/test.pdf -o output/result.md
-```
+## Contact
 
-### Command Line Options
-
-- `pdf_path`: Path to your PDF file (required)
-- `-o, --output`: Output file path (optional, defaults to 'output/result.md')
-
-### Examples
-
-Convert a PDF and display in console:
-```bash
-python src/test_pymupdf4llm/main.py tests/data/sample.pdf
-```
-
-Convert a PDF and save to a specific file:
-```bash
-python src/test_pymupdf4llm/main.py tests/data/sample.pdf -o output/custom_name.md
-```
-
-### Directory Setup
-
-1. Place your PDF files in the `tests/data/` directory
-2. Output files will be saved in the `output/` directory by default
-3. The `output/` directory will be created automatically if it doesn't exist
+For any inquiries, please contact the author at thanawat.rn@gmail.com.

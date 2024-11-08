@@ -7,10 +7,12 @@ readme = "README.md"
 packages = [{include = "test_pymupdf4llm", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 pymupdf4llm = "^0.0.17"
+gradio = "^5.5.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+gradio = "^3.0.0"  # Add this line
