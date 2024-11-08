@@ -2,6 +2,10 @@
 
 This application allows you to convert PDF documents to markdown format using the `pymupdf4llm` library. It features a Gradio interface for easy file uploads and conversion, displaying both the markdown content and the time taken for the conversion.
 
+## PyMuPDF4llm API Documentation
+
+You can see the PyMuPDF4llm API documentation [here](https://pymupdf.readthedocs.io/en/latest/pymupdf4llm/api.html#pymupdf4llm-api).
+
 ## Features
 
 - Convert PDF files to markdown format.
