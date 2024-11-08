@@ -1,5 +1,6 @@
 # Output files
-output/
+output/*
+!output/.gitkeep
 *.md
 !README.md
 
